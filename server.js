@@ -97,6 +97,7 @@ function addDept() {
           questions();
         });
       });
+    };
 
 function addRole() {
         inquirer
@@ -130,7 +131,7 @@ function addRole() {
               questions();
             });
           });
-      };
+};
       
 function addEmp() {
         inquirer
@@ -170,8 +171,7 @@ function addEmp() {
               questions();
             });
           });
-      }
-    }
+      };
 
 function empByDept() {
     const sql = `SELECT departments.deptartment_name, employee.first_name, employee.last_name
