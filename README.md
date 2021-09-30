@@ -11,12 +11,13 @@ Users need an application to help keep their business organized. They need to ma
 ## Tools
 
 - Javascript
-- node.js
+- Node.js
 - MYSQL
+- Inquirer
 
 ## Demo
 
-[Watch emTrack in Action Here]()
+[Watch emTrack in Action Here](https://watch.screencastify.com/v/gxuZQ6XQhrWTURV1Eg8i)
 
 ## Screenshots
 Invocation
