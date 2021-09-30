@@ -60,11 +60,7 @@ function getRoles() {
   }
 
 function getEmps() {
-    const sql = ` SELECT employee.first_name, employee.last_name,  name_role.title,
-      name_role.salary, departments.department_name, CONCAT(manager.first_name, " ", manager.last_name) AS manager
-      FROM employee LEFT JOIN name_role on employee.role_id = name_role.id
-      LEFT JOIN departments ON name_role.department_id = department.id
-      LEFT JOIN employee manager ON manager.id = employee.manager_id;`;
+    const sql = ` SELECT * FROM employee;`;
     db.query(sql, function (err, res) {
       if (err) throw err;
       console.table(res);
